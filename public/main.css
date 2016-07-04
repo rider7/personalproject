@@ -109,7 +109,7 @@ html, body {
 
 /*HOME VIEW*/
 /*HEADPHONES*/
-.view-container{
+.home-view-container{
   height: 1700px;
   display: flex;
   flex-direction: column;
@@ -283,4 +283,229 @@ html, body {
   order: 3;
   width: 33.33%;
   background-color: white;
+}
+
+/*TMA2 VIEW*/
+.tma-2-main-container{
+height: 1700px;
+display: flex;
+flex-direction: column;
+}
+
+/*HEADER*/
+ /*monitor the scroll till it hits the pixel height and shift fixed header up*/
+.fixed-header{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  order: 1;
+}
+
+.first-row{
+  display: flex;
+
+  order: 1;
+  height: 50%;
+  width: 100%;
+  background-color: #1C1C1C;
+}
+
+.first-row > ul > li{
+  list-style-type: none;
+  display: inline;
+  color: white;
+}
+
+.second-row{
+  order: 2;
+  height: 50%;
+  width: 100%;
+  background-color: #2B2B2B;
+}
+.second-row > ul > li{
+  list-style-type: none;
+  display: inline;
+  color: white;
+}
+
+/*MAIN TMA-2*/
+
+.tma-2-image-container{
+  height: 100vh;
+  width: 100%;
+  order: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.tma-2-image{
+  order: 1;
+  height: 100%;
+  width: 65%;
+  background-color: white;
+  color: black;
+}
+
+.tma-2-text{
+  order: 2;
+  height: 100%;
+  width: 35%;
+  background-color: #A9A9A9;
+}
+.parts{
+width: 100%;
+height: 100px;
+order: 3;
+background-color: #2B2B2B;
+color: white;
+}
+
+/*SPEAKER/HEADBAND*/
+.tma-speakers-headband-containers{
+  order:4;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-units{
+  order: 1;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.speaker-image{
+  order: 1;
+  height: 100%;
+  width: 33.34%;
+  background-color: white;
+}
+
+.speaker-text{
+  order: 2;
+  height: 100%;
+  width: 66.66%;
+}
+
+.headband-units{
+  display: flex;
+  flex-direction: row;
+  order: 2;
+  height: 50%;
+  width: 100%;
+}
+
+.headband-text{
+  order: 1;
+  width: 66.66%;
+  height: 100%;
+}
+
+.headband-image{
+  order: 2;
+  width: 33.34%;
+  height: 100%;
+  background-color: white;
+}
+
+/*EARBUDS/CABLES*/
+.earpads-cable-containers{
+  order:5;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.earpad-units{
+  order: 1;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.earpad-image{
+  order: 1;
+  height: 100%;
+  width: 33.34%;
+  background-color: white;
+}
+
+.earpad-text{
+  order: 2;
+  height: 100%;
+  width: 66.66%;
+}
+
+.cable-units{
+  display: flex;
+  flex-direction: row;
+  order: 2;
+  height: 50%;
+  width: 100%;
+}
+
+.cable-text{
+  order: 1;
+  width: 66.66%;
+  height: 100%;
+}
+
+.cable-image{
+  order: 2;
+  width: 33.34%;
+  height: 100%;
+  background-color: white;
+}
+
+/*DETAILS*/
+.details{
+width: 100%;
+height: 100px;
+order: 6;
+background-color: #2B2B2B;
+color: white;
+}
+
+.details-container{
+  order: 7;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  background-color: #A9A9A9;
+}
+
+/*REVIEWs*/
+.reviews-container{
+  order: 8;
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  width: 100%;
+  background-color: #A9A9A9;
+}
+
+.wired-review{
+  order: 1;
+  width: 33.33%;
+  height: 100%;
+}
+
+.techtools-review{
+  order: 2;
+  width: 33.33%;
+  height: 100%;
+}
+
+.mixmag-review{
+  order: 3;
+  width: 33.33%;
+  height: 100%;
 }
