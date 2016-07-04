@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type ="text/css" href="main.css">
   </head>
-  <body>
+  <body ng-controller="mainCtrl">
+    <section class="main-container">
 
+      <section class="left-main-container">
+        <section class="top-container"></section>
+        <section class="route-container">
+        <ui-view></ui-view>
+        </section>
+        <footer class="footer">
+          <div id="links">
+            <div id="links-left">
+            <ul>
+              <li> Headphones </li>
+              <li> Parts </li>
+              <li> Accessories </li>
+              <li> Gift card </li>
+              <li> Support </li>
+              <li> About </li>
+            </ul>
+              </div>
+              <div id="links-right">
+              <ul>
+                <li> General enquiry </li>
+                <li> Webshop enquiry </li>
+                <li> Product issue </li>
+                <li> TMA Compatibility </li>
+                <li> TMA-1 Replacement </li>
+                <li> Headband </li>
+              </ul>
+                </div>
+          </div>
+          <div id="newsletter">
+            <h1> Newsletter </h1>
+            <h1> Newsletter Join Button </h1>
+          </div>
+          <div id="social">
+          </p>Or find us on</p>
+          </div>
+        </footer>
+      </section>
+
+      <section class="nav-bar">
+    <!-- {{test}} -->
+        <div class="cart"> CART </div>
+        <ul id="nav-list">
+          <li> HOME </li>
+          <li> HEADPHONES </li>
+          <li> CONFIGURATOR </li>
+          <li> ARTISTS </li>
+          <li> BLOG </li>
+          <li> REVIEWS </li>
+        </ul>
+      </section>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="./app.js"></script>
+    <script src="./mainCtrl.js"></script>
   </body>
 </html>
