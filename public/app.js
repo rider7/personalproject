@@ -8,7 +8,8 @@ $stateProvider
 
   .state('tma-2', {
     templateUrl: './views/tma2tmpl.html',
-    url: '/headphones/tma-2'
+    url: '/headphones/tma-2',
+    controller: 'productCtrl'
   })
 
   .state('order', {
@@ -18,7 +19,8 @@ $stateProvider
 
   .state('cart', {
     templateUrl: './views/cart.html',
-    url: '/cart'
+    url: '/cart',
+    controller: 'userCtrl'
   })
 
 $urlRouterProvider

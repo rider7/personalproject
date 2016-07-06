@@ -26,7 +26,7 @@
      <h2> S 03 - H 03 -E 0 5 - C 0 2 </h2>
      <p> This configuration has a very detailed and articulated bass. Mids are sligthly forward adn good for vocals. Rounded highs. Wide sound stae and medium isolation. </p>
      <h1> 2 2 5 U S D </h1>
-     <button> BUY </button>
+    <button ng-repeat="product in productList" ng-click="buyProduct(product._id)"> <a ui-sref='cart'> Buy {{product.title}} </a> </button>
      <button> RECONFIGURE </button>
    <br/>
    <p> 10 USD SHIPPING FROM US </p>
@@ -35,7 +35,7 @@
    <p> SOCIAL ICONS </p>
  </section>
  <section class="parts">
-   <h1> P A R T S </h1>
+   <h2> P A R T S </h2>
  </section>
  <section class="tma-speakers-headband-containers">
    <section class="speaker-units">
@@ -78,7 +78,7 @@
   </section>
  </section>
  <section class="details">
-   <h1> DETAILS </h1>
+   <h2> DETAILS </h2>
  </section>
   <section class="details-container">
     <section class="details-left-container"></section>
@@ -99,28 +99,3 @@
     </div>
   </section>
  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
