@@ -23,6 +23,30 @@ $stateProvider
     controller: 'userCtrl'
   })
 
+  .state('login', {
+    url: '/login',
+    templateUrl: './routes/login/loginTmpl.html',
+    controller: 'loginCtrl'
+  })
+
+  .state('profile', {
+    templateUrl: './routes/profile/profileTmpl.html',
+    url: '/profile',
+    controller: 'profileCtrl',
+    resolve: {
+      user: function(authService, $state){
+        return authService.getCurrentUser().then(function(response){
+          if(!response.date)
+          $state.go('login');
+          return response.data;
+        })
+        .catch(function(err){
+          $state.go('login');
+        })
+      }
+    }
+  })
+
 $urlRouterProvider
   .otherwise('/')
 

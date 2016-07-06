@@ -5,7 +5,7 @@ angular.module('myApp')
 // user id hardcoded in use npm passport in the future
 // quantity also hardcoded and should be chosen by user in the future
 		this.createCart = function( product ) {
-			return $http.post('/api/cart/577d272a0a85cf5902b2e0e2',
+			return $http.post('/api/cart/:user_id',
 			{ item: product, quantity: 1})
 		}
 
